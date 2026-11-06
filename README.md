@@ -8,6 +8,8 @@
 
 A simple launcher allowing you to start games from different launchers written in Rust.
 
+I made this for myself using AI and thought might as well release it
+
 [Supported Launchers](#-launchers-supported) • [Installation](#-installation) • [Screenshots](#-screenshots)
 
 </div>
