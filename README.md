@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Version](https://img.shields.io/badge/version-1.2-blue.svg)
+![Version](https://img.shields.io/badge/version-1.3-blue.svg)
 ![Downloads](https://img.shields.io/github/downloads/cryptix222/OwnLauncher/total?color=brightgreen)
 ![Rust](https://img.shields.io/badge/made_with-Rust-orange.svg?logo=rust)
 
@@ -38,7 +38,7 @@ I made this for myself using AI and thought might as well release it.
 
 ## Installation
 
-1. Download the latest version (`v1.2`) from the [Releases](https://github.com/cryptix222/OwnLauncher/releases) page.
+1. Download the latest version (`v1.3`) from the [Releases](https://github.com/cryptix222/OwnLauncher/releases) page.
 2. Run `OwnLauncher.exe`.
 
 ## Building from Source
