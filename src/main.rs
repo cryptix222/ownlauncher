@@ -284,12 +284,25 @@ struct LauncherApp {
     is_fetching: bool,
 }
 
+fn get_config_path() -> PathBuf {
+    let mut path = if let Some(app_data) = std::env::var_os("APPDATA") {
+        PathBuf::from(app_data)
+    } else {
+        PathBuf::from(".")
+    };
+    path.push("OwnLauncher");
+    let _ = fs::create_dir_all(&path);
+    path.push("games.toml");
+    path
+}
+
 impl LauncherApp {
     fn new(cc: &eframe::CreationContext<'_>) -> Self {
         egui_extras::install_image_loaders(&cc.egui_ctx);
 
-        let mut config = if Path::new("games.toml").exists() {
-            let data = fs::read_to_string("games.toml").unwrap_or_default();
+        let config_path = get_config_path();
+        let mut config = if config_path.exists() {
+        let data = fs::read_to_string(&config_path).unwrap_or_default();
             toml::from_str(&data).unwrap_or_default()
         } else {
             Config::default()
@@ -299,6 +312,7 @@ impl LauncherApp {
 
         Self::scan_actual_games(&mut config);
         config.games.sort_by(|a, b| a.name.cmp(&b.name));
+        
 
         let (meta_sender, meta_receiver) = mpsc::channel();
 
@@ -443,7 +457,7 @@ impl LauncherApp {
             }
         }
         
-        let _ = fs::write("games.toml", toml::to_string(config).unwrap_or_default());
+        let _ = fs::write(get_config_path(), toml::to_string(config).unwrap_or_default());
     }
 
     fn add_game(config: &mut Config, name: String, method: LaunchMethod) {
@@ -451,8 +465,10 @@ impl LauncherApp {
     }
 
     fn save_config(&self) {
-        if let Ok(toml_string) = toml::to_string(&self.config) { let _ = fs::write("games.toml", toml_string); }
+    if let Ok(toml_string) = toml::to_string(&self.config) { 
+        let _ = fs::write(get_config_path(), toml_string); 
     }
+}
 
     fn extract_valid_image(val: &serde_json::Value) -> Option<String> {
         if let Some(orig) = val.get("originalimage").or_else(|| val.get("original")) {
@@ -1292,12 +1308,7 @@ impl eframe::App for LauncherApp {
                         ui.label(egui::RichText::new(status).size(12.0).color(active_theme.accent_color()));
                     }
 
-                    ui.add_space(14.0);
-                    ui.with_layout(egui::Layout::right_to_left(egui::Align::Center), |ui| {
-                        if ui.button("Schließen").clicked() {
-                            close_requested = true;
-                        }
-                    });
+                    
                 });
             if close_requested {
                 open = false;
