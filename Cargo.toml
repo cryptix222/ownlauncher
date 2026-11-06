@@ -1,0 +1,15 @@
+[package]
+name = "ownlauncher"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+toml = "0.8"
+eframe = "0.28"
+open = "5.1"
+reqwest = { version = "0.12", features = ["blocking", "json"] }
+egui_extras = { version = "0.28", features = ["all_loaders", "image"] }
+image = { version = "0.25", features = ["png", "jpeg", "webp"] }
+winres = "0.1"
