@@ -1061,10 +1061,6 @@ impl LauncherApp {
                                     ui.label(egui::RichText::new("Launcher:").strong());
                                     ui.label(game.launch_method.platform_name());
                                     ui.end_row();
-
-                                    ui.label(egui::RichText::new("Status:").strong());
-                                    ui.label(egui::RichText::new("Bereit").color(egui::Color32::GREEN));
-                                    ui.end_row();
                                 });
                         });
                 });
