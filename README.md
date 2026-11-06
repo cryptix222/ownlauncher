@@ -3,12 +3,8 @@
 <div align="center">
 
 ![Version](https://img.shields.io/badge/version-1.2-blue.svg)
-![Build Status](https://img.shields.io/github/actions/workflow/status/cryptix222/OwnLauncher/main.yml?branch=main)
 ![Downloads](https://img.shields.io/github/downloads/cryptix222/OwnLauncher/total?color=brightgreen)
-![Stars](https://img.shields.io/github/stars/cryptix222/OwnLauncher?style=flat)
-![Issues](https://img.shields.io/github/issues/cryptix222/OwnLauncher)
 ![Rust](https://img.shields.io/badge/made_with-Rust-orange.svg?logo=rust)
-![License](https://img.shields.io/github/license/cryptix222/OwnLauncher)
 
 A simple launcher allowing you to start games from different launchers written in Rust.
 
