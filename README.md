@@ -38,3 +38,20 @@ A simple launcher allowing you to start games from different launchers written i
 
 1. Download the latest version (`v1.2`) from the [Releases](https://github.com/YOUR_GITHUB_USERNAME/OwnLauncher/releases) page.
 2. Run `OwnLauncher.exe`.
+
+## Building from Source
+
+### Prerequisites
+
+* [Rust](https://www.rust-lang.org/tools/install) (cargo toolchain installed)
+
+### Build Steps
+
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/cryptix222/ownlauncher.git](https://github.com/cryptix222/ownlauncher.git)
+   cd ownlauncher
+2. Build the repository
+    ```bash
+   cargo build --release
+
