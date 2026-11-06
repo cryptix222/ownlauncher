@@ -38,7 +38,7 @@ I made this for myself using AI and thought might as well release it.
 
 ## Installation
 
-1. Download the latest version (`v1.2`) from the [Releases](https://github.com/YOUR_GITHUB_USERNAME/OwnLauncher/releases) page.
+1. Download the latest version (`v1.2`) from the [Releases](https://github.com/cryptix222/OwnLauncher/releases) page.
 2. Run `OwnLauncher.exe`.
 
 ## Building from Source
