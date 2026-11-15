@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Version](https://img.shields.io/badge/version-1.3-blue.svg)
+![Version](https://img.shields.io/badge/version-2.1-blue.svg)
 ![Downloads](https://img.shields.io/github/downloads/cryptix222/OwnLauncher/total?color=brightgreen)
 ![Rust](https://img.shields.io/badge/made_with-Rust-orange.svg?logo=rust)
 
