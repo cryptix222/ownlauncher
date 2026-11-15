@@ -50,13 +50,8 @@ I made this for myself with help of AI and thought might as well release it.
 
 ### Build Steps
 
-For v2 u need to compile the frontend first updated guide soon
-
-1. Clone the repository:
+1. Open build.ps1:
    ```bash
-   git clone [https://github.com/cryptix222/ownlauncher.git](https://github.com/cryptix222/ownlauncher.git)
-   cd ownlauncher
-2. Build the repository
-    ```bash
-   cargo build --release
+   Right Click - Open with Powershell or copy all commands from the build.bat manually in Terminal!
+
 
