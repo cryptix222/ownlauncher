@@ -39,7 +39,7 @@ I made this for myself with help of AI and thought might as well release it.
 
 ## Installation
 
-1. Download the latest version (`v1.3`) from the [Releases](https://github.com/cryptix222/OwnLauncher/releases) page.
+1. Download the latest version (`v2.1`) from the [Releases](https://github.com/cryptix222/OwnLauncher/releases) page.
 2. Run `OwnLauncher.exe`.
 
 ## Building from Source
@@ -49,6 +49,8 @@ I made this for myself with help of AI and thought might as well release it.
 * [Rust](https://www.rust-lang.org/tools/install) (cargo toolchain installed)
 
 ### Build Steps
+
+For v2 u need to compile the frontend first updated guide soon
 
 1. Clone the repository:
    ```bash
