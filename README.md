@@ -30,7 +30,8 @@ I made this for myself with help of AI and thought might as well release it.
 
 <div align="center">
 
-<img width="1003" height="713" alt="OwnLauncher Screenshot" src="https://github.com/user-attachments/assets/7f600589-ea21-44eb-80c8-caf75247689b" />
+<img width="1128" height="736" alt="image" src="https://github.com/user-attachments/assets/75e09570-66ad-4340-99d3-047348b36b8a" />
+
 
 </div>
 
