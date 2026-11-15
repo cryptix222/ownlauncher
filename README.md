@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Version](https://img.shields.io/badge/version-1.3-blue.svg)
+![Version](https://img.shields.io/badge/version-2.1-blue.svg)
 ![Downloads](https://img.shields.io/github/downloads/cryptix222/OwnLauncher/total?color=brightgreen)
 ![Rust](https://img.shields.io/badge/made_with-Rust-orange.svg?logo=rust)
 
@@ -30,7 +30,8 @@ I made this for myself with help of AI and thought might as well release it.
 
 <div align="center">
 
-<img width="1003" height="713" alt="OwnLauncher Screenshot" src="https://github.com/user-attachments/assets/7f600589-ea21-44eb-80c8-caf75247689b" />
+<img width="1128" height="736" alt="image" src="https://github.com/user-attachments/assets/75e09570-66ad-4340-99d3-047348b36b8a" />
+
 
 </div>
 
@@ -38,7 +39,7 @@ I made this for myself with help of AI and thought might as well release it.
 
 ## Installation
 
-1. Download the latest version (`v1.3`) from the [Releases](https://github.com/cryptix222/OwnLauncher/releases) page.
+1. Download the latest version (`v2.1`) from the [Releases](https://github.com/cryptix222/OwnLauncher/releases) page.
 2. Run `OwnLauncher.exe`.
 
 ## Building from Source
@@ -48,6 +49,8 @@ I made this for myself with help of AI and thought might as well release it.
 * [Rust](https://www.rust-lang.org/tools/install) (cargo toolchain installed)
 
 ### Build Steps
+
+For v2 u need to compile the frontend first updated guide soon
 
 1. Clone the repository:
    ```bash
